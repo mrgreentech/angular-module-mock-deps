@@ -1,7 +1,24 @@
 /* global angular */
 var oldModule = angular.module;
 
-angular.module = function (moduleName) {
+var debug = true;
+
+angular.module = function(moduleName, deps) {
     'use strict';
-    return oldModule(moduleName, []);
+
+    if (typeof deps === 'object' && typeof deps.length === 'number') {
+
+        if (debug) {
+            console.log('calling angular.module(' + moduleName + ', []);');
+        }
+
+        return oldModule(moduleName, []);
+    }
+
+    if (debug) {
+        console.log('calling angular.module(' + moduleName + ');');
+    }
+
+    return oldModule(moduleName);
+
 };
