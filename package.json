@@ -1,14 +1,14 @@
 {
   "name": "angular-module-no-deps",
   "version": "1.0.0",
-  "description": "overwrites angular.module to include no dependencies",
+  "description": "overrides angular.module to not load module dependencies",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.mrgreen.zone:7999/gar/angular-module-no-deps.git"
+    "url": "https://github.com/mrgreentech/angular-module-no-deps.git"
   },
   "keywords": [
     "angular",
@@ -16,5 +16,5 @@
     "testing"
   ],
   "author": "Simon Auner <simon.auner@mrgreen.com>",
-  "license": "ISC"
+  "license": "MIT"
 }
