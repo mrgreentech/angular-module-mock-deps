@@ -1,7 +1,7 @@
 /* global angular */
 var oldModule = angular.module;
 
-var debug = true;
+var debug = false;
 
 angular.module = function(moduleName, deps) {
     'use strict';
