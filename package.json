@@ -1,6 +1,6 @@
 {
   "name": "angular-module-no-deps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "overrides angular.module to not load module dependencies",
   "main": "index.js",
   "scripts": {
